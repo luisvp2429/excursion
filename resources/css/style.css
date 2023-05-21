@@ -1,0 +1,35 @@
+html {
+    font-family: Verdana;
+    background-color: black;
+    text-align: center;
+}
+
+h1 {
+    font-weight: normal;
+    font-size: 50px;
+    color: white;
+}
+
+a {
+    color: aquamarine;
+    font-size: 17px;
+}
+
+h2 {
+    font-weight: 300;
+    font-size: 42px;
+    color: white;
+}
+
+p {
+    font-size: 21px;
+    color: gray;
+}
+
+#copy {
+    text-align: right;
+}
+
+img {
+    padding: 1%;
+}

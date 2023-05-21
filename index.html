@@ -1,35 +1,31 @@
 <!DOCTYPE html>
-<html lang="en" ng-app="forms">
-  <head>
-    <meta charset="utf-8">
-    <title>Forms</title>
-  </head>
-  <body>
-    <div ng-controller="FormController as ctrl">
-      <form ng-submit='ctrl.onSubmit(ctrl.user)'>
-        <div>
-          <label>First Name:</label>
-          <input type="text" ng-model="ctrl.user.firstname" ng-required='ctrl.isRequired' />
-        </div>
-        <div>
-          <label>Last Name:</label>
-          <input type="text" ng-model="ctrl.user.lastname" ng-required='ctrl.isRequired' />
-        </div>
-        <div>
-          <label>Email:</label>
-          <input type="email" ng-model="ctrl.user.email" ng-required='ctrl.isRequired' />
-        </div>
-        <div>
-          <label>Password:</label>
-          <input type="password" ng-model="ctrl.user.password" ng-required='ctrl.isRequired' />
-        </div>
-        <div>
-          <button type="submit">Sign up!</button>
-        </div>
-      </form>
-    </div>
+<html lang="en">
 
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.8.3/angular.js" integrity="sha512-klc+qN5PPscoGxSzFpetVsCr9sryi2e2vHwZKq43FdFyhSAa7vAqog/Ifl8tzg/8mBZiG2MAKhyjH5oPJp65EA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-    <script src="src/app.js"></script>
-  </body>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="resources/css/style.css">
+</head>
+
+<body>
+    <div id="banner">
+        <h1>Discover hidden places in the world around you</h1>
+        <a href="">Download Excursion (Coming soon!)</a>
+    </div>
+    <div div="media">
+        <video src="resources/videos/excursion.mp4"></video>
+        <h2>Your personal travel guide</h2>
+        <p>Excursion remembers places like you, and recommends new points of insterest around you.</p>
+        <img src="resources/images/camp.jpg" alt="">
+    </div>
+    <div id="end">        
+        <img src="resources/images/phone.png" alt="">
+        <h2>Coming soon for Android and iPhone</h2>
+        <a href="">Download Excursion (Coming soon!)</a>
+        <p id="copy">&#169; Excursion</p>
+    </div>
+</body>
+
 </html>
