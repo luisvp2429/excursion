@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="forms">
+  <head>
+    <meta charset="utf-8">
+    <title>Forms</title>
+  </head>
+  <body>
+    <div ng-controller="FormController as ctrl">
+      <form ng-submit='ctrl.onSubmit(ctrl.user)'>
+        <div>
+          <label>First Name:</label>
+          <input type="text" ng-model="ctrl.user.firstname" ng-required='ctrl.isRequired' />
+        </div>
+        <div>
+          <label>Last Name:</label>
+          <input type="text" ng-model="ctrl.user.lastname" ng-required='ctrl.isRequired' />
+        </div>
+        <div>
+          <label>Email:</label>
+          <input type="email" ng-model="ctrl.user.email" ng-required='ctrl.isRequired' />
+        </div>
+        <div>
+          <label>Password:</label>
+          <input type="password" ng-model="ctrl.user.password" ng-required='ctrl.isRequired' />
+        </div>
+        <div>
+          <button type="submit">Sign up!</button>
+        </div>
+      </form>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.8.3/angular.js" integrity="sha512-klc+qN5PPscoGxSzFpetVsCr9sryi2e2vHwZKq43FdFyhSAa7vAqog/Ifl8tzg/8mBZiG2MAKhyjH5oPJp65EA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="src/app.js"></script>
+  </body>
+</html>
